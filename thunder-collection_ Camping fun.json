@@ -1,0 +1,153 @@
+{
+    "client": "Thunder Client",
+    "collectionName": " Camping fun",
+    "dateExported": "2023-07-10T13:41:09.978Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "36c40584-0f1d-4dd2-b515-96239d336c79",
+            "colId": "12030172-fd50-49f2-845b-ede9bc311f92",
+            "containerId": "",
+            "name": "get campers",
+            "url": "http://127.0.0.1:3000/campers/2",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-08T13:00:06.758Z",
+            "modified": "2023-07-10T12:36:13.268Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "24b5d751-f9b5-4c69-8c59-357b4cebc2de",
+            "colId": "12030172-fd50-49f2-845b-ede9bc311f92",
+            "containerId": "",
+            "name": "get  single camper",
+            "url": "http://127.0.0.1:3000/campers/9",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-08T13:01:09.511Z",
+            "modified": "2023-07-10T12:54:26.643Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "33c0cbc3-ab7b-42dc-8e81-3233bf6e454c",
+            "colId": "12030172-fd50-49f2-845b-ede9bc311f92",
+            "containerId": "",
+            "name": "post  camper ",
+            "url": "http://127.0.0.1:3000/campers",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-07-10T12:52:44.819Z",
+            "modified": "2023-07-10T12:59:11.466Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "zooey"
+                    },
+                    {
+                        "name": "age",
+                        "value": "12"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a1420774-9be6-4a5b-b94f-5fbea7ee6f10",
+            "colId": "12030172-fd50-49f2-845b-ede9bc311f92",
+            "containerId": "",
+            "name": "get activities",
+            "url": "http://127.0.0.1:3000/activities",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-10T13:00:08.295Z",
+            "modified": "2023-07-10T13:00:36.692Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "zooey"
+                    },
+                    {
+                        "name": "age",
+                        "value": "12"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3ca7802e-d341-40f9-8a52-a041142b55d7",
+            "colId": "12030172-fd50-49f2-845b-ede9bc311f92",
+            "containerId": "",
+            "name": "delete activitiy",
+            "url": "http://127.0.0.1:3000/activities/4",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-07-10T13:09:11.724Z",
+            "modified": "2023-07-10T13:18:03.714Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "zooey"
+                    },
+                    {
+                        "name": "age",
+                        "value": "12"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "95199037-871e-4d69-b525-294a42f24316",
+            "colId": "12030172-fd50-49f2-845b-ede9bc311f92",
+            "containerId": "",
+            "name": " signup post",
+            "url": "http://127.0.0.1:3000/signups",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-07-10T13:30:56.646Z",
+            "modified": "2023-07-10T13:40:49.518Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "time",
+                        "value": "9"
+                    },
+                    {
+                        "name": "camper_id",
+                        "value": "4"
+                    },
+                    {
+                        "name": "activity_id",
+                        "value": "7"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
