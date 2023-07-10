@@ -31,7 +31,7 @@ rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_resp
       render json: { error: "Camper not found" }, status: :not_found
     end
 
-    def render_unprocessable_entity_response(errors)
-        render json: { errors: errors }, status: 422
+    def render_unprocessable_entity_response(exception)
+        render json: { errors: exception.record.errors.full_messages}, status: :unprocessable_entity
     end
 end

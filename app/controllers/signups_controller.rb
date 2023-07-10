@@ -1,6 +1,5 @@
 class SignupsController < ApplicationController
-rescue_from ActiveRecord::RecordInvalid, with: :inavlid
-
+rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
     def create
         signup = Signup.create!(signup_params)
         render json: signup.activity, status: :created
@@ -11,7 +10,7 @@ rescue_from ActiveRecord::RecordInvalid, with: :inavlid
         params.permit(:camper_id, :activity_id, :time)
     end
 
-    def inavlid(errors)
-        render json: { errors: errors }, status: 422
+    def render_unprocessable_entity_response(exception)
+        render json: { errors: exception.record.errors.full_messages }, status: :unprocessable_entity
     end
 end
